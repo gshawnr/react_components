@@ -1,16 +1,14 @@
 import React, { useState, useEffect, useRef } from "react";
 
-const Dropdown = ({ options }) => {
+const Dropdown = ({ options, selected, onOptionSelect }) => {
   const [open, setOpen] = useState(false);
-  const [selected, setSelected] = useState(options[0].name);
+  // const [selected, setSelected] = useState(selected);
   const ref = useRef();
 
   const onBodyClick = (e) => {
-    if (ref.current.contains(e.target)) {
-      return;
+    if (ref.current && !ref.current.contains(e.target)) {
+      return setOpen(false);
     }
-
-    setOpen(false);
   };
   useEffect(() => {
     document
@@ -28,7 +26,7 @@ const Dropdown = ({ options }) => {
   const renderedOptions = options.map((item) => {
     return (
       <div
-        onClick={() => setSelected(item.name)}
+        onClick={() => onOptionSelect(item)}
         className="item"
         key={item.value}
       >
@@ -46,7 +44,7 @@ const Dropdown = ({ options }) => {
           onClick={() => setOpen((prev) => !prev)}
         >
           <i className="dropdown icon" />
-          <div className="text">{selected}</div>
+          <div className="text">{selected.name}</div>
           <div className={`menu ${open ? "visible transition" : ""} `}>
             {renderedOptions}
           </div>
