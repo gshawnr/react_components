@@ -1,11 +1,11 @@
 import React, { useRef } from "react";
 
+import RightCarouselButton from "./RightCarouselButton";
+import LeftCarouselButton from "./LeftCarouselButton";
 import { ArrowLeft } from "./ArrowLeft";
 import { ArrowRight } from "./ArrowRight";
 import {
   CarouselItem,
-  LeftCarouselButton,
-  RightCarouselButton,
   CarouserContainer,
   CarouserContainerInner,
 } from "./Carousel.styled";
@@ -27,15 +27,15 @@ export function Carousel({ children }) {
       </CarouserContainerInner>
       <LeftCarouselButton
         hasItemsOnLeft={hasItemsOnLeft}
-        onClick={scrollLeft}
-        aria-label="Previous slide"
+        handleClick={scrollLeft}
+        // aria-label="Previous slide"
       >
         <ArrowLeft />
       </LeftCarouselButton>
       <RightCarouselButton
         hasItemsOnRight={hasItemsOnRight}
-        onClick={scrollRight}
-        aria-label="Next slide"
+        handleClick={scrollRight}
+        // aria-label="Next slide"
       >
         <ArrowRight />
       </RightCarouselButton>
