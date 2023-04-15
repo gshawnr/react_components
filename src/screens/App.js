@@ -1,6 +1,6 @@
-import { Carousel } from "../components/Carousel";
+import Carousel from "../components/Carousel";
 
-import { Container, HorizontalCenter, H1, Item } from "./App.styled";
+import "./App.css";
 
 const colors = [
   "#f1c40f",
@@ -14,23 +14,25 @@ const colors = [
 ];
 
 const colorsArray = colors.map((color) => (
-  <Item
-    size={20}
-    style={{ background: color, borderRadius: "20px", opacity: 0.9 }}
+  <div
+    className="app-item"
+    style={{
+      background: color,
+    }}
     key={color}
   >
     {color}
-  </Item>
+  </div>
 ));
 
 function App() {
   return (
-    <Container>
-      <H1>Easy Carousel</H1>
-      <HorizontalCenter>
+    <div className="app-container">
+      <h1 className="h1">Easy Carousel</h1>
+      <div className="app-inner-container">
         <Carousel>{colorsArray}</Carousel>
-      </HorizontalCenter>
-    </Container>
+      </div>
+    </div>
   );
 }
 

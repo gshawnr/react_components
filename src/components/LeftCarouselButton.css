@@ -1,13 +1,13 @@
 .LeftCarouselButton {
-  left: 0;
-  position: absolute;
-  cursor: pointer;
-  top: 50%;
-  z-index: 1;
-  transition: transform 0.1s ease-in-out;
   background: white;
   border-radius: 15px;
   border: none;
+  cursor: pointer;
+  left: 0;
   padding: 0.5rem;
-  /* transform: translate(-100%, -50%); */
+  position: absolute;
+  top: 50%;
+  transition: transform 0.1s ease-in-out;
+  transform: translate(-100%, -50%);
+  z-index: 1;
 }

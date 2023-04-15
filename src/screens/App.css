@@ -1,0 +1,32 @@
+.h1 {
+  text-align: center;
+  margin: 2% 0;
+  padding-bottom: 10rem;
+}
+
+.app-inner-container {
+  display: flex;
+  align-items: center;
+  height: 30%;
+  margin: 5% auto;
+  width: 65%;
+}
+
+.app-container {
+  background: #ecf0f1;
+  height: 100vh;
+  width: 100%;
+}
+
+.app-item {
+  border-radius: 20px;
+  color: white;
+  font-size: 2rem;
+  height: 20rem;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.9;
+  width: 20rem;
+}
