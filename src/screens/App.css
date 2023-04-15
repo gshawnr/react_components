@@ -22,11 +22,11 @@
   border-radius: 20px;
   color: white;
   font-size: 2rem;
-  height: 20rem;
+  height: 400px;
   text-transform: capitalize;
   display: flex;
   align-items: center;
   justify-content: center;
   opacity: 0.9;
-  width: 20rem;
+  width: 600px;
 }

@@ -1,12 +1,13 @@
 .CarouselItem {
   flex: 0 0 auto;
-  margin-left: 5rem;
+  margin-left: 10rem;
 }
 
 .CarouselContainer {
   padding: 0 5%;
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
 
 .CarouselContainer:hover .LeftCarouselButton {
@@ -23,6 +24,7 @@
   scroll-snap-type: x mandatory;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  width: 100%;
 }
 
 .CarouselContainerInner::-webkit-scrollbar {
