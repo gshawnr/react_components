@@ -18,7 +18,7 @@ export const HorizontalCenter = styled(Flex)`
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  max-width: 60%;
+  max-width: 50%;
 `;
 
 export const Container = styled("div")`

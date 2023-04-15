@@ -9,7 +9,7 @@ export const CarouserContainer = styled(Relative)`
 export const CarouselItem = styled("div")`
   flex: 0 0 auto;
   // for spacing between items
-  margin-left: 1rem;
+  margin-left: 5rem;
 `;
 
 export const CarouselButton = styled("button")`

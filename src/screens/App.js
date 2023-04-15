@@ -13,12 +13,6 @@ const colors = [
   "#95a5a6",
 ];
 
-const numbersArray = Array.from(Array(10).keys()).map((number) => (
-  <Item size={5} style={{ color: "black" }} key={number}>
-    {number}
-  </Item>
-));
-
 const colorsArray = colors.map((color) => (
   <Item
     size={20}
