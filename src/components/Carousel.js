@@ -22,7 +22,7 @@ const Carousel = ({ children }) => {
         aria-label="Previous slide"
       >
         <ArrowLeft />
-      </LeftCarouselButton>{" "}
+      </LeftCarouselButton>
       <div className="CarouselContainerInner" ref={ref}>
         {children.map((child, index) => (
           <div className="CarouselItem" key={index}>
@@ -33,7 +33,7 @@ const Carousel = ({ children }) => {
       <RightCarouselButton
         hasItemsOnRight={hasItemsOnRight}
         handleClick={scrollRight}
-        // aria-label="Next slide"
+        aria-label="Next slide"
       >
         <ArrowRight />
       </RightCarouselButton>
