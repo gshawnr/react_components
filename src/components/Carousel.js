@@ -19,12 +19,12 @@ const Carousel = ({ children }) => {
       <LeftCarouselButton
         hasItemsOnLeft={hasItemsOnLeft}
         handleClick={scrollLeft}
-        // aria-label="Previous slide"
+        aria-label="Previous slide"
       >
         <ArrowLeft />
       </LeftCarouselButton>{" "}
       <div className="CarouselContainerInner" ref={ref}>
-        {React.Children.map(children, (child, index) => (
+        {children.map((child, index) => (
           <div className="CarouselItem" key={index}>
             {child}
           </div>

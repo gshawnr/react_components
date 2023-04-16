@@ -28,7 +28,10 @@ const colorsArray = colors.map((color) => (
 function App() {
   return (
     <div className="app-container">
-      <h1 className="h1">Easy Carousel</h1>
+      <h1 style={{ textAlign: "center", padding: "5%" }}>
+        This app is a container for various prebuilt components that may be
+        reused
+      </h1>
       <div className="app-inner-container">
         <Carousel>{colorsArray}</Carousel>
       </div>

@@ -1,5 +1,5 @@
 .LeftCarouselButton {
-  background: white;
+  background: transparent;
   border-radius: 15px;
   border: none;
   cursor: pointer;
@@ -9,6 +9,6 @@
   top: 50%;
   transition: transform 0.1s ease-in-out;
   /* transform: translate(-100%, -50%); // use for hidden */
-  transform: translate(0%, -50%); /* comment out if using above */
+  transform: translate(0%, -50%); /*comment out if using above */
   z-index: 1;
 }
